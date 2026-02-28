@@ -527,6 +527,6 @@ This comprehensive lab successfully demonstrated both classical and modern appro
 
 **End of Lab Report**
 
-*Generated: February 28, 2026*  
+*Created: February 28, 2026*  
 *Dataset: 75 AF patients, 12-lead ECG, 256 Hz sampling rate*  
 *Repository: https://github.com/mhwa06/Biomedical-Signal-Processing-Labs-Matlab-Python*
