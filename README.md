@@ -2,6 +2,16 @@
 
 Atrial fibrillation (AF) lab work covering ECG preprocessing, ventricular activity suppression, and baseline AF recurrence modeling using both MATLAB and Python implementations.
 
+## Quick Navigation
+
+- [Project Overview](#project-overview)
+- [Files in This Folder](#files-in-this-folder)
+- [Results Preview](#results-preview-imagespng)
+- [Method Summary](#method-summary)
+- [Environment Setup](#environment-setup-python)
+- [Running MATLAB Script](#running-matlab-script)
+- [Notes](#notes)
+
 ## Project Overview
 
 This folder contains:
