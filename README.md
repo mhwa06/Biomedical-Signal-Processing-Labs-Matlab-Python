@@ -175,6 +175,10 @@ This generates the task figures listed above.
 - For `Question_8.ipynb`, lead II (`lead = 1`) is selected by default for stronger R-peaks.
 - The holdout split in MATLAB Q6 is randomized each run.
 
+## Acknowledgment
+
+Parts of the dataset description and task framing in this README are adapted from the original AF lab manual provided for the course.
+
 ---
 
 ## Repository Hygiene Recommendation
