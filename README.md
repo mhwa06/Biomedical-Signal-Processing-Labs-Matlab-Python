@@ -62,16 +62,35 @@ The ECG tensors are organized as 12 leads × 15000 samples × 75 subjects, sampl
 - `Task 6 AF Recurrence.fig`
 
 ### Results Preview (`Images.png`)
-- `Images.png/Task 1_ 12-lead Raw ECG (Xva).png`
-- `Images.png/Task 1_ 12-lead Atrial-only ECG (Xa).png`
-- `Images.png/Task 2_ R-peaks.png`
-- `Images.png/Task 3_ QRST segments (R).png`
-- `Images.png/Task 3_ Mean QRST.png`
-- `Images.png/Task 4_ Singular values.png`
-- `Images.png/Task 4_ SVD subtraction on first segment.png`
-- `Images.png/Task 4_ Compare ground-truth Ra vs SVD residual.png`
-- `Images.png/Task 5_ Mean subtraction vs SVD subtraction.png`
-- `Images.png/Task 6_ Confusion Matrix.png`
+#### Task 1: 12-lead Raw ECG (Xva)
+![Task 1 - 12-lead Raw ECG (Xva)](Images.png/Task%201_%2012-lead%20Raw%20ECG%20(Xva).png)
+
+#### Task 1: 12-lead Atrial-only ECG (Xa)
+![Task 1 - 12-lead Atrial-only ECG (Xa)](Images.png/Task%201_%2012-lead%20Atrial-only%20ECG%20(Xa).png)
+
+#### Task 2: R-peaks
+![Task 2 - R-peaks](Images.png/Task%202_%20R-peaks.png)
+
+#### Task 3: QRST segments (R)
+![Task 3 - QRST segments (R)](Images.png/Task%203_%20QRST%20segments%20(R).png)
+
+#### Task 3: Mean QRST
+![Task 3 - Mean QRST](Images.png/Task%203_%20Mean%20QRST.png)
+
+#### Task 4: Singular values
+![Task 4 - Singular values](Images.png/Task%204_%20Singular%20values.png)
+
+#### Task 4: SVD subtraction on first segment
+![Task 4 - SVD subtraction on first segment](Images.png/Task%204_%20SVD%20subtraction%20on%20first%20segment.png)
+
+#### Task 4: Compare ground-truth Ra vs SVD residual
+![Task 4 - Compare ground-truth Ra vs SVD residual](Images.png/Task%204_%20Compare%20ground-truth%20Ra%20vs%20SVD%20residual.png)
+
+#### Task 5: Mean subtraction vs SVD subtraction
+![Task 5 - Mean subtraction vs SVD subtraction](Images.png/Task%205_%20Mean%20subtraction%20vs%20SVD%20subtraction.png)
+
+#### Task 6: Confusion Matrix
+![Task 6 - Confusion Matrix](Images.png/Task%206_%20Confusion%20Matrix.png)
 
 ---
 
