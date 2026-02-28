@@ -61,6 +61,18 @@ The ECG tensors are organized as 12 leads × 15000 samples × 75 subjects, sampl
 - `Task 5 Mean Subtraction vs SVD subtraction.fig`
 - `Task 6 AF Recurrence.fig`
 
+### Results Preview (`Images.png`)
+- `Images.png/Task 1_ 12-lead Raw ECG (Xva).png`
+- `Images.png/Task 1_ 12-lead Atrial-only ECG (Xa).png`
+- `Images.png/Task 2_ R-peaks.png`
+- `Images.png/Task 3_ QRST segments (R).png`
+- `Images.png/Task 3_ Mean QRST.png`
+- `Images.png/Task 4_ Singular values.png`
+- `Images.png/Task 4_ SVD subtraction on first segment.png`
+- `Images.png/Task 4_ Compare ground-truth Ra vs SVD residual.png`
+- `Images.png/Task 5_ Mean subtraction vs SVD subtraction.png`
+- `Images.png/Task 6_ Confusion Matrix.png`
+
 ---
 
 ## Method Summary
