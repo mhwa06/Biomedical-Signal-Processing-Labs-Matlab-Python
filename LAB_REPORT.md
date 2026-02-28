@@ -69,10 +69,10 @@ Visualize the 12-lead ECG signals for both raw (Rva) and atrial-only (Ra) record
 ### Results
 
 #### Raw ECG with Ventricular Activity (Xva)
-![Task 1 - 12-lead Raw ECG (Xva)](../Images.png/Task%201_%2012-lead%20Raw%20ECG%20%28Xva%29.png)
+![Task 1 - 12-lead Raw ECG (Xva)](Images.png/Task%201_%2012-lead%20Raw%20ECG%20%28Xva%29.png)
 
 #### Atrial-Only ECG (Xa)
-![Task 1 - 12-lead Atrial-only ECG (Xa)](../Images.png/Task%201_%2012-lead%20Atrial-only%20ECG%20%28Xa%29.png)
+![Task 1 - 12-lead Atrial-only ECG (Xa)](Images.png/Task%201_%2012-lead%20Atrial-only%20ECG%20%28Xa%29.png)
 
 ### Key Findings
 - **Raw ECG (Rva):** Shows prominent QRS complexes (ventricular activity) with clear peaks visible across all leads. The signal amplitude varies significantly between leads, with V1–V6 (precordial leads) showing larger QRS magnitudes.
@@ -104,7 +104,7 @@ MinPeakDistance = 0.25 * fs = 64 samples
 
 ### Results
 
-![Task 2 - R-peaks](../Images.png/Task%202_%20R-peaks.png)
+![Task 2 - R-peaks](Images.png/Task%202_%20R-peaks.png)
 
 ### Key Findings
 - **Detection rate:** Successfully identified consistent R-peak locations across the signal
@@ -137,10 +137,10 @@ For each R-peak k (excluding first and last):
 ### Results
 
 #### QRST Segments (Aligned)
-![Task 3 - QRST segments (R)](../Images.png/Task%203_%20QRST%20segments%20%28R%29.png)
+![Task 3 - QRST segments (R)](Images.png/Task%203_%20QRST%20segments%20%28R%29.png)
 
 #### Mean QRST Template
-![Task 3 - Mean QRST](../Images.png/Task%203_%20Mean%20QRST.png)
+![Task 3 - Mean QRST](Images.png/Task%203_%20Mean%20QRST.png)
 
 ### Key Findings
 - **Segment count:** ~45 valid QRST segments after boundary filtering
@@ -180,7 +180,7 @@ Use Singular Value Decomposition (SVD) to decompose QRST segments into low-rank 
 ### Results
 
 #### Singular Values
-![Task 4 - Singular values](../Images.png/Task%204_%20Singular%20values.png)
+![Task 4 - Singular values](Images.png/Task%204_%20Singular%20values.png)
 
 **Analysis of singular values:**
 - σ₁ = 8.2 (35% of total energy)
@@ -189,7 +189,7 @@ Use Singular Value Decomposition (SVD) to decompose QRST segments into low-rank 
 - First 2 components capture ~60% of total variance
 
 #### SVD Subtraction on First Segment
-![Task 4 - SVD subtraction on first segment](../Images.png/Task%204_%20SVD%20subtraction%20on%20first%20segment.png)
+![Task 4 - SVD subtraction on first segment](Images.png/Task%204_%20SVD%20subtraction%20on%20first%20segment.png)
 
 **Component breakdown:**
 - Blue (Original): Full raw QRST segment
@@ -197,7 +197,7 @@ Use Singular Value Decomposition (SVD) to decompose QRST segments into low-rank 
 - Green (Residual): Fine details and noise
 
 #### Comparison with Ground Truth
-![Task 4 - Compare ground-truth Ra vs SVD residual](../Images.png/Task%204_%20Compare%20ground-truth%20Ra%20vs%20SVD%20residual.png)
+![Task 4 - Compare ground-truth Ra vs SVD residual](Images.png/Task%204_%20Compare%20ground-truth%20Ra%20vs%20SVD%20residual.png)
 
 ### Key Findings
 - **SVD effectiveness:** Residual signal closely matches ground truth Ra in morphology
@@ -233,7 +233,7 @@ Compare two ventricular removal strategies: (1) simple mean template subtraction
 
 ### Results
 
-![Task 5 - Mean subtraction vs SVD subtraction](../Images.png/Task%205_%20Mean%20subtraction%20vs%20SVD%20subtraction.png)
+![Task 5 - Mean subtraction vs SVD subtraction](Images.png/Task%205_%20Mean%20subtraction%20vs%20SVD%20subtraction.png)
 
 ### Key Findings
 - **Ground truth (black):** Smooth atrial-only signal from Ra
@@ -284,7 +284,7 @@ Total feature vector: 6 leads × 3 features = 18 dimensions
 
 ### Results
 
-![Task 6 - Confusion Matrix](../Images.png/Task%206_%20Confusion%20Matrix.png)
+![Task 6 - Confusion Matrix](Images.png/Task%206_%20Confusion%20Matrix.png)
 
 **Classification Performance:**
 ```
