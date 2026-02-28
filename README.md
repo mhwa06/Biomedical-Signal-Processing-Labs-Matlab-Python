@@ -6,6 +6,7 @@ Atrial fibrillation (AF) lab work covering ECG preprocessing, ventricular activi
 
 - [Project Overview](#project-overview)
 - [Files in This Folder](#files-in-this-folder)
+- [Dataset Explanation](#dataset-explanation)
 - [Results Preview](#results-preview-imagespng)
 - [Method Summary](#method-summary)
 - [Environment Setup](#environment-setup-python)
@@ -58,6 +59,28 @@ The ECG tensors are organized as 12 leads × 15000 samples × 75 subjects, sampl
 - `Rva1.mat`, `Rva2.mat`, `Rva3.mat`: ventricular + atrial ECG tensors
 - `Ra1.mat`, `Ra2.mat`, `Ra3.mat`: atrial-only ECG tensors (ground truth for subtraction tasks)
 - `indrecur.mat`, `indnonrecur.mat`: labels/indices for AF recurrence classification
+
+## Dataset Explanation
+
+### Core ECG tensors
+- Each ECG tensor uses shape: **12 leads × 15000 samples × subjects**.
+- Sampling frequency is **256 Hz**, so each recording is ~58.6 seconds long (`15000 / 256`).
+- Leads follow standard 12-lead order:
+  `I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6`.
+
+### File split convention
+- `Rva1.mat`, `Rva2.mat`, `Rva3.mat` are split parts of ventricular-containing ECGs.
+- `Ra1.mat`, `Ra2.mat`, `Ra3.mat` are matching split parts of atrial-only ECGs.
+- The scripts/notebooks concatenate `1 + 2 + 3` along the subject axis to form full datasets with **75 subjects**.
+
+### Signal meaning
+- **Rva***: mixed ECG where ventricular activity is present.
+- **Ra***: atrial-only reference signal (used as target/ground truth for ventricular subtraction tasks).
+
+### Labels for recurrence task
+- `indrecur.mat` contains subject indices for recurrence class.
+- `indnonrecur.mat` contains subject indices for non-recurrence class.
+- MATLAB Question 6 uses these indices to build labeled samples, then extracts PSD-based features from leads **V1–V6** (`7:12`) for SVM classification.
 
 ### Generated MATLAB Figures (`.fig`)
 - `Task 1_ 12-lead RAW ECG(Xva).fig`
