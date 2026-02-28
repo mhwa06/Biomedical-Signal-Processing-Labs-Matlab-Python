@@ -67,6 +67,8 @@ The ECG tensors are organized as 12 leads × 15000 samples × 75 subjects, sampl
 - Sampling frequency is **256 Hz**, so each recording is ~58.6 seconds long (`15000 / 256`).
 - Leads follow standard 12-lead order:
   `I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6`.
+- The `Rva` signals are raw (band-pass filtered) ECG with both ventricular and atrial activities.
+- The `Ra` signals are processed ECG where ventricular activity is removed, leaving atrial activity (AF-focused reference).
 
 ### File split convention
 - `Rva1.mat`, `Rva2.mat`, `Rva3.mat` are split parts of ventricular-containing ECGs.
@@ -80,7 +82,19 @@ The ECG tensors are organized as 12 leads × 15000 samples × 75 subjects, sampl
 ### Labels for recurrence task
 - `indrecur.mat` contains subject indices for recurrence class.
 - `indnonrecur.mat` contains subject indices for non-recurrence class.
+- After electrical cardioversion and a 6-month blanking period, subjects are grouped by AF recurrence outcome.
+- Only **63 subjects** are documented in `indrecur`/`indnonrecur` vectors.
 - MATLAB Question 6 uses these indices to build labeled samples, then extracts PSD-based features from leads **V1–V6** (`7:12`) for SVM classification.
+
+### Lab task scope (from original manual)
+1. 12-lead ECG visualization (MATLAB)
+2. Simple R-wave detection (MATLAB)
+3. QRST averaging (MATLAB)
+4. Ventricular activity subtraction, SVD-based (MATLAB)
+5. Comparison with mean QRST subtraction (no SVD)
+6. AF recurrence machine learning on `Ra` (use V1–V6)
+7. ANN ventricular activity removal on `Rva` with `Ra` as ground truth (use V1–V6)
+8. Optional: ANN-based R detection
 
 ### Generated MATLAB Figures (`.fig`)
 - `Task 1_ 12-lead RAW ECG(Xva).fig`
