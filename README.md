@@ -181,9 +181,6 @@ Parts of the dataset description and task framing in this README are adapted fro
 
 ---
 
-## Repository Hygiene Recommendation
-
-If pushing to GitHub, avoid committing `venv/` (local environment). Add a `.gitignore` with at least:
 
 ```gitignore
 venv/
